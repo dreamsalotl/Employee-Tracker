@@ -1,6 +1,7 @@
 const express = require("express");
 const mysql = require('mysql2');
 const inquirer = require("inquirer");
+const { logo } = require("./assets/js/logo");
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -22,6 +23,7 @@ const db = mysql.createConnection(
 const viewDepts = () => {
     db.query('SELECT * FROM department', function (err, results) {
         process.stdout.write("\u001b[2J\u001b[0;0H");
+        logo();
         console.table(results);
         mainMenu();
     });
@@ -90,7 +92,8 @@ const mainMenu = async () => {
     } else if (answers.selection === 6) {
       return console.log("You chose option 7!");
     } else if (answers.selection === 7) {
-      return console.log("You chose option 8!");
+        process.stdout.write("\u001b[2J\u001b[0;0H");
+        return process.exit();
     }
   });
 };
