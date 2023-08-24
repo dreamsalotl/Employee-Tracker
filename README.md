@@ -24,7 +24,7 @@ npm install
 
 ## Usage
 
-[Untitled_ Aug 23, 2023 9_49 PM.webm](https://github.com/dreamsalotl/Employee-Tracker/assets/130865355/819a90f1-39d7-4cc7-b313-2df16725a763)
+[Usage.webm](https://github.com/dreamsalotl/Employee-Tracker/assets/130865355/ef668add-1fd1-488a-b011-b5b78a0e4d46)
 
 To use the application, run the following commands:
 
